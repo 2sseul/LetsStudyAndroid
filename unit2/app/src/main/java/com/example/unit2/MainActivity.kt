@@ -21,7 +21,7 @@ class MainActivity : ComponentActivity() {
             Unit2Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Greeting(
-                        name = "Android",
+                        name = "SSEUL2",
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
@@ -33,11 +33,13 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     Text(
-        text = "Hello $name!",
+        text = "Welcome $name!",
         modifier = modifier
     )
 }
 
+// 어플리케이션의 사용자 인터페이스(UI)가 Android 스튜디오에 띄워줌
+// 어플리케이션을 애뮬레이터에서 빌드하지 않아도 사용자가 앱에서 보는 것을 보여줌
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
